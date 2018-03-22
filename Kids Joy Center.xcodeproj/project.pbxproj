@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CB27C1DC20644F89005DD012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1DB20644F89005DD012 /* AppDelegate.swift */; };
-		CB27C1DE20644F89005DD012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1DD20644F89005DD012 /* ViewController.swift */; };
 		CB27C1E120644F89005DD012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB27C1DF20644F89005DD012 /* Main.storyboard */; };
 		CB27C1E320644F89005DD012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB27C1E220644F89005DD012 /* Assets.xcassets */; };
 		CB27C1E620644F89005DD012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB27C1E420644F89005DD012 /* LaunchScreen.storyboard */; };
 		CB27C1F120644F8A005DD012 /* Kids_Joy_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1F020644F8A005DD012 /* Kids_Joy_CenterTests.swift */; };
 		CB27C1FC20644F8A005DD012 /* Kids_Joy_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1FB20644F8A005DD012 /* Kids_Joy_CenterUITests.swift */; };
+		CB27C20A20645B53005DD012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C20920645B53005DD012 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		CB27C1D820644F89005DD012 /* Kids Joy Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Joy Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB27C1DB20644F89005DD012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB27C1DD20644F89005DD012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB27C1E020644F89005DD012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB27C1E220644F89005DD012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB27C1E520644F89005DD012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		CB27C1F720644F8A005DD012 /* Kids Joy CenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids Joy CenterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB27C1FB20644F8A005DD012 /* Kids_Joy_CenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_Joy_CenterUITests.swift; sourceTree = "<group>"; };
 		CB27C1FD20644F8A005DD012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB27C20920645B53005DD012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				CB27C1DB20644F89005DD012 /* AppDelegate.swift */,
-				CB27C1DD20644F89005DD012 /* ViewController.swift */,
 				CB27C1DF20644F89005DD012 /* Main.storyboard */,
+				CB27C20920645B53005DD012 /* ViewController.swift */,
 				CB27C1E220644F89005DD012 /* Assets.xcassets */,
 				CB27C1E420644F89005DD012 /* LaunchScreen.storyboard */,
 				CB27C1E720644F89005DD012 /* Info.plist */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB27C1DE20644F89005DD012 /* ViewController.swift in Sources */,
+				CB27C20A20645B53005DD012 /* ViewController.swift in Sources */,
 				CB27C1DC20644F89005DD012 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
