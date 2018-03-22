@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB27C1DC20644F89005DD012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1DB20644F89005DD012 /* AppDelegate.swift */; };
+		CB27C1DE20644F89005DD012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1DD20644F89005DD012 /* ViewController.swift */; };
+		CB27C1E120644F89005DD012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB27C1DF20644F89005DD012 /* Main.storyboard */; };
+		CB27C1E320644F89005DD012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB27C1E220644F89005DD012 /* Assets.xcassets */; };
+		CB27C1E620644F89005DD012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB27C1E420644F89005DD012 /* LaunchScreen.storyboard */; };
+		CB27C1F120644F8A005DD012 /* Kids_Joy_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1F020644F8A005DD012 /* Kids_Joy_CenterTests.swift */; };
+		CB27C1FC20644F8A005DD012 /* Kids_Joy_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1FB20644F8A005DD012 /* Kids_Joy_CenterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB27C1ED20644F8A005DD012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB27C1D020644F89005DD012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB27C1D720644F89005DD012;
+			remoteInfo = "Kids Joy Center";
+		};
+		CB27C1F820644F8A005DD012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB27C1D020644F89005DD012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB27C1D720644F89005DD012;
+			remoteInfo = "Kids Joy Center";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB27C1D820644F89005DD012 /* Kids Joy Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Joy Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB27C1DB20644F89005DD012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB27C1DD20644F89005DD012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB27C1E020644F89005DD012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB27C1E220644F89005DD012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB27C1E520644F89005DD012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB27C1E720644F89005DD012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB27C1EC20644F8A005DD012 /* Kids Joy CenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids Joy CenterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB27C1F020644F8A005DD012 /* Kids_Joy_CenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_Joy_CenterTests.swift; sourceTree = "<group>"; };
+		CB27C1F220644F8A005DD012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB27C1F720644F8A005DD012 /* Kids Joy CenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids Joy CenterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB27C1FB20644F8A005DD012 /* Kids_Joy_CenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_Joy_CenterUITests.swift; sourceTree = "<group>"; };
+		CB27C1FD20644F8A005DD012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB27C1D520644F89005DD012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB27C1E920644F8A005DD012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB27C1F420644F8A005DD012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB27C1CF20644F89005DD012 = {
+			isa = PBXGroup;
+			children = (
+				CB27C1DA20644F89005DD012 /* Kids Joy Center */,
+				CB27C1EF20644F8A005DD012 /* Kids Joy CenterTests */,
+				CB27C1FA20644F8A005DD012 /* Kids Joy CenterUITests */,
+				CB27C1D920644F89005DD012 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB27C1D920644F89005DD012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB27C1D820644F89005DD012 /* Kids Joy Center.app */,
+				CB27C1EC20644F8A005DD012 /* Kids Joy CenterTests.xctest */,
+				CB27C1F720644F8A005DD012 /* Kids Joy CenterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB27C1DA20644F89005DD012 /* Kids Joy Center */ = {
+			isa = PBXGroup;
+			children = (
+				CB27C1DB20644F89005DD012 /* AppDelegate.swift */,
+				CB27C1DD20644F89005DD012 /* ViewController.swift */,
+				CB27C1DF20644F89005DD012 /* Main.storyboard */,
+				CB27C1E220644F89005DD012 /* Assets.xcassets */,
+				CB27C1E420644F89005DD012 /* LaunchScreen.storyboard */,
+				CB27C1E720644F89005DD012 /* Info.plist */,
+			);
+			path = "Kids Joy Center";
+			sourceTree = "<group>";
+		};
+		CB27C1EF20644F8A005DD012 /* Kids Joy CenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB27C1F020644F8A005DD012 /* Kids_Joy_CenterTests.swift */,
+				CB27C1F220644F8A005DD012 /* Info.plist */,
+			);
+			path = "Kids Joy CenterTests";
+			sourceTree = "<group>";
+		};
+		CB27C1FA20644F8A005DD012 /* Kids Joy CenterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB27C1FB20644F8A005DD012 /* Kids_Joy_CenterUITests.swift */,
+				CB27C1FD20644F8A005DD012 /* Info.plist */,
+			);
+			path = "Kids Joy CenterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB27C1D720644F89005DD012 /* Kids Joy Center */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB27C20020644F8A005DD012 /* Build configuration list for PBXNativeTarget "Kids Joy Center" */;
+			buildPhases = (
+				CB27C1D420644F89005DD012 /* Sources */,
+				CB27C1D520644F89005DD012 /* Frameworks */,
+				CB27C1D620644F89005DD012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kids Joy Center";
+			productName = "Kids Joy Center";
+			productReference = CB27C1D820644F89005DD012 /* Kids Joy Center.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB27C1EB20644F8A005DD012 /* Kids Joy CenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB27C20320644F8A005DD012 /* Build configuration list for PBXNativeTarget "Kids Joy CenterTests" */;
+			buildPhases = (
+				CB27C1E820644F8A005DD012 /* Sources */,
+				CB27C1E920644F8A005DD012 /* Frameworks */,
+				CB27C1EA20644F8A005DD012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB27C1EE20644F8A005DD012 /* PBXTargetDependency */,
+			);
+			name = "Kids Joy CenterTests";
+			productName = "Kids Joy CenterTests";
+			productReference = CB27C1EC20644F8A005DD012 /* Kids Joy CenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB27C1F620644F8A005DD012 /* Kids Joy CenterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB27C20620644F8A005DD012 /* Build configuration list for PBXNativeTarget "Kids Joy CenterUITests" */;
+			buildPhases = (
+				CB27C1F320644F8A005DD012 /* Sources */,
+				CB27C1F420644F8A005DD012 /* Frameworks */,
+				CB27C1F520644F8A005DD012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB27C1F920644F8A005DD012 /* PBXTargetDependency */,
+			);
+			name = "Kids Joy CenterUITests";
+			productName = "Kids Joy CenterUITests";
+			productReference = CB27C1F720644F8A005DD012 /* Kids Joy CenterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB27C1D020644F89005DD012 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Trevor A Cohen";
+				TargetAttributes = {
+					CB27C1D720644F89005DD012 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CB27C1EB20644F8A005DD012 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB27C1D720644F89005DD012;
+					};
+					CB27C1F620644F8A005DD012 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB27C1D720644F89005DD012;
+					};
+				};
+			};
+			buildConfigurationList = CB27C1D320644F89005DD012 /* Build configuration list for PBXProject "Kids Joy Center" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB27C1CF20644F89005DD012;
+			productRefGroup = CB27C1D920644F89005DD012 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB27C1D720644F89005DD012 /* Kids Joy Center */,
+				CB27C1EB20644F8A005DD012 /* Kids Joy CenterTests */,
+				CB27C1F620644F8A005DD012 /* Kids Joy CenterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB27C1D620644F89005DD012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB27C1E620644F89005DD012 /* LaunchScreen.storyboard in Resources */,
+				CB27C1E320644F89005DD012 /* Assets.xcassets in Resources */,
+				CB27C1E120644F89005DD012 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB27C1EA20644F8A005DD012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB27C1F520644F8A005DD012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB27C1D420644F89005DD012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB27C1DE20644F89005DD012 /* ViewController.swift in Sources */,
+				CB27C1DC20644F89005DD012 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB27C1E820644F8A005DD012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB27C1F120644F8A005DD012 /* Kids_Joy_CenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB27C1F320644F8A005DD012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB27C1FC20644F8A005DD012 /* Kids_Joy_CenterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB27C1EE20644F8A005DD012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB27C1D720644F89005DD012 /* Kids Joy Center */;
+			targetProxy = CB27C1ED20644F8A005DD012 /* PBXContainerItemProxy */;
+		};
+		CB27C1F920644F8A005DD012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB27C1D720644F89005DD012 /* Kids Joy Center */;
+			targetProxy = CB27C1F820644F8A005DD012 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB27C1DF20644F89005DD012 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB27C1E020644F89005DD012 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB27C1E420644F89005DD012 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB27C1E520644F89005DD012 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB27C1FE20644F8A005DD012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB27C1FF20644F8A005DD012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB27C20120644F8A005DD012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids Joy Center/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile-ios.Kids-Joy-Center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB27C20220644F8A005DD012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids Joy Center/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile-ios.Kids-Joy-Center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB27C20420644F8A005DD012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids Joy CenterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile-ios.Kids-Joy-CenterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kids Joy Center.app/Kids Joy Center";
+			};
+			name = Debug;
+		};
+		CB27C20520644F8A005DD012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids Joy CenterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile-ios.Kids-Joy-CenterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kids Joy Center.app/Kids Joy Center";
+			};
+			name = Release;
+		};
+		CB27C20720644F8A005DD012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids Joy CenterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile-ios.Kids-Joy-CenterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kids Joy Center";
+			};
+			name = Debug;
+		};
+		CB27C20820644F8A005DD012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids Joy CenterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile-ios.Kids-Joy-CenterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kids Joy Center";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB27C1D320644F89005DD012 /* Build configuration list for PBXProject "Kids Joy Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB27C1FE20644F8A005DD012 /* Debug */,
+				CB27C1FF20644F8A005DD012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB27C20020644F8A005DD012 /* Build configuration list for PBXNativeTarget "Kids Joy Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB27C20120644F8A005DD012 /* Debug */,
+				CB27C20220644F8A005DD012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB27C20320644F8A005DD012 /* Build configuration list for PBXNativeTarget "Kids Joy CenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB27C20420644F8A005DD012 /* Debug */,
+				CB27C20520644F8A005DD012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB27C20620644F8A005DD012 /* Build configuration list for PBXNativeTarget "Kids Joy CenterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB27C20720644F8A005DD012 /* Debug */,
+				CB27C20820644F8A005DD012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB27C1D020644F89005DD012 /* Project object */;
+}
