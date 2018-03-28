@@ -73,6 +73,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func play(_ sender: Any) {
+        if chosen_game == 3 {
+            let alert = UIAlertController(title: "No game selected", message: "Please select a game to play", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if chosen_difficulty == 3 {
+            let alert = UIAlertController(title: "No dificulty selected", message: "Please select a difficulty to play", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
         if let play_button = sender as? UIButton {
             performSegue(withIdentifier: "play_game", sender: play_button)
         }
