@@ -28,8 +28,9 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "play_game" {
+        if segue.identifier == "play_memory" || segue.identifier == "play_sort" || segue.identifier == "play_balloon" {
             if let dest = segue.destination as? GameVC {
+                print(chosen_game)
                 dest.game = chosen_game
                 dest.difficulty = chosen_difficulty
             }
@@ -83,8 +84,10 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
+        
         if let play_button = sender as? UIButton {
-            performSegue(withIdentifier: "play_game", sender: play_button)
+            let game_dict: [Int : String] = [0 : "play_memory", 1 : "play_sort", 2 : "play_balloon"]
+            performSegue(withIdentifier: game_dict[chosen_game]!, sender: play_button)
         }
     }
     

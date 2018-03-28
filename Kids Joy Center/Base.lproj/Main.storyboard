@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-441" y="116"/>
         </scene>
-        <!--GameVC-->
+        <!--MemoryVC-->
         <scene sceneID="2Zj-dg-Byb">
             <objects>
-                <viewController id="K0R-Pf-aQR" customClass="GameVC" customModule="Kids_Joy_Center" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="K0R-Pf-aQR" customClass="MemoryVC" customModule="Kids_Joy_Center" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lGI-MV-mBE">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYD-jH-ms4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="272" y="-580"/>
+            <point key="canvasLocation" x="272" y="-808"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xv2-9P-C6S">
@@ -155,12 +155,44 @@
                         <outletCollection property="difficulty_button_array" destination="m3K-Om-jMr" collectionClass="NSMutableArray" id="L9r-Y3-SmW"/>
                         <outletCollection property="difficulty_button_array" destination="8RZ-qj-i5D" collectionClass="NSMutableArray" id="55d-AT-5ef"/>
                         <outletCollection property="difficulty_button_array" destination="LLK-xO-KuR" collectionClass="NSMutableArray" id="eDa-pL-TS6"/>
-                        <segue destination="K0R-Pf-aQR" kind="show" identifier="play_game" id="jYC-f0-nT5"/>
+                        <segue destination="K0R-Pf-aQR" kind="show" identifier="play_memory" id="jYC-f0-nT5"/>
+                        <segue destination="8Y6-SX-cGp" kind="show" identifier="play_balloon" id="F4g-tG-hmH"/>
+                        <segue destination="hag-12-Wn7" kind="show" identifier="play_sort" id="374-gZ-Mbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7B7-ms-dAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="272" y="116"/>
+        </scene>
+        <!--BalloonVC-->
+        <scene sceneID="UlQ-dL-tan">
+            <objects>
+                <viewController id="8Y6-SX-cGp" customClass="BalloonVC" customModule="Kids_Joy_Center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jrr-xA-cj9">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jAS-X0-BJa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUl-XB-EfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="116"/>
+        </scene>
+        <!--SortVC-->
+        <scene sceneID="Ka0-rD-Oi8">
+            <objects>
+                <viewController id="hag-12-Wn7" customClass="SortVC" customModule="Kids_Joy_Center" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AHf-Ky-6Qt">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="GSi-TW-ojE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pl-WS-IhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="984"/>
         </scene>
     </scenes>
     <resources>

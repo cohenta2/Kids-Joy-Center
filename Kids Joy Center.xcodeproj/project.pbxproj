@@ -15,6 +15,9 @@
 		CB27C1FC20644F8A005DD012 /* Kids_Joy_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1FB20644F8A005DD012 /* Kids_Joy_CenterUITests.swift */; };
 		CB27C20A20645B53005DD012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C20920645B53005DD012 /* ViewController.swift */; };
 		CB64B5E4206AFE9000DB91DE /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64B5E3206AFE9000DB91DE /* GameVC.swift */; };
+		CBD1ABB9206C32830073B7C9 /* MemoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1ABB8206C32830073B7C9 /* MemoryVC.swift */; };
+		CBD1ABBB206C33BC0073B7C9 /* SortVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1ABBA206C33BC0073B7C9 /* SortVC.swift */; };
+		CBD1ABBD206C33CC0073B7C9 /* BalloonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1ABBC206C33CC0073B7C9 /* BalloonVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		CB27C1FD20644F8A005DD012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB27C20920645B53005DD012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB64B5E3206AFE9000DB91DE /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		CBD1ABB8206C32830073B7C9 /* MemoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryVC.swift; sourceTree = "<group>"; };
+		CBD1ABBA206C33BC0073B7C9 /* SortVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortVC.swift; sourceTree = "<group>"; };
+		CBD1ABBC206C33CC0073B7C9 /* BalloonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				CB64B5E3206AFE9000DB91DE /* GameVC.swift */,
+				CBD1ABB8206C32830073B7C9 /* MemoryVC.swift */,
 				CB27C1DB20644F89005DD012 /* AppDelegate.swift */,
 				CB27C1DF20644F89005DD012 /* Main.storyboard */,
+				CBD1ABBA206C33BC0073B7C9 /* SortVC.swift */,
+				CBD1ABBC206C33CC0073B7C9 /* BalloonVC.swift */,
 				CB27C20920645B53005DD012 /* ViewController.swift */,
 				CB27C1E220644F89005DD012 /* Assets.xcassets */,
 				CB27C1E420644F89005DD012 /* LaunchScreen.storyboard */,
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD1ABBD206C33CC0073B7C9 /* BalloonVC.swift in Sources */,
+				CBD1ABBB206C33BC0073B7C9 /* SortVC.swift in Sources */,
 				CB27C20A20645B53005DD012 /* ViewController.swift in Sources */,
 				CB64B5E4206AFE9000DB91DE /* GameVC.swift in Sources */,
 				CB27C1DC20644F89005DD012 /* AppDelegate.swift in Sources */,
+				CBD1ABB9206C32830073B7C9 /* MemoryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

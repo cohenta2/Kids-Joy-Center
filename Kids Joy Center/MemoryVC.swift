@@ -1,23 +1,18 @@
 //
-//  GameVC.swift
+//  MemoryVC.swift
 //  Kids Joy Center
 //
-//  Created by Trevor A Cohen on 3/27/18.
+//  Created by Trevor A Cohen on 3/28/18.
 //  Copyright © 2018 Trevor A Cohen. All rights reserved.
 //
 
 import UIKit
 
-class GameVC: UIViewController {
-    var game: Int = 3
-    var difficulty: Int = 3
+class MemoryVC: GameVC {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        set_background()
-//        print("The chosen game was \(game) and the chosen difficulty was \(difficulty)")
+        set_background()
         // Do any additional setup after loading the view.
     }
 
@@ -36,18 +31,5 @@ class GameVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func load_game() {
-        
-    }
-    
-    func set_background() {
-        let background = UIImage(named: "\(game)")
-        let backgroundIV = UIImageView(image: background)
-        let safeGuide = self.view.safeAreaLayoutGuide
-        backgroundIV.contentMode = .scaleToFill
-        self.view.addSubview(backgroundIV)
-        backgroundIV.topAnchor.constraint(equalTo: safeGuide.topAnchor).isActive = true
-        backgroundIV.frame = (backgroundIV.superview?.frame)!
-    }
+
 }
