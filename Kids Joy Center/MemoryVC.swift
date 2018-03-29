@@ -13,6 +13,7 @@ class MemoryVC: GameVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         set_background()
+        set_time()
         // Do any additional setup after loading the view.
     }
 

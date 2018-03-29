@@ -13,8 +13,9 @@ class SortVC: GameVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         set_background()
+        set_time()
         // Do any additional setup after loading the view.
-    }
+    }   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,7 +32,7 @@ class SortVC: GameVC {
         bar.alpha = 0.3
         self.view.addSubview(bar)
         bar.frame = CGRect(x: 0,y: 0, width: self.view.frame.width, height: self.view.frame.height / 6)
-        bar.topAnchor.constraint(equalTo: safeGuide.topAnchor).isActive = true
+//        bar.topAnchor.constraint(equalTo: safeGuide.topAnchor).isActive = true
         self.view.addSubview(backgroundIV)
         backgroundIV.frame = CGRect(x: 0, y: Int(bar.frame.maxY), width: Int(backgroundIV.superview!.frame.width), height: Int(backgroundIV.superview!.frame.height - bar.frame.height))
     }

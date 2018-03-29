@@ -11,12 +11,11 @@ import UIKit
 class GameVC: UIViewController {
     var game: Int = 3
     var difficulty: Int = 3
-
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        set_background()
+
 //        print("The chosen game was \(game) and the chosen difficulty was \(difficulty)")
         // Do any additional setup after loading the view.
     }
@@ -37,17 +36,27 @@ class GameVC: UIViewController {
     }
     */
     
-    func load_game() {
+    func set_time() {
+        let time = UIImage(named: "time")
+        let timeIV = UIImageView(image: time)
+        self.view.addSubview(timeIV)
+        timeIV.frame = CGRect(x: 0, y: 75, width: 170, height: 30)
+        timeIV.superview?.bringSubview(toFront: timeIV)
+        var clockIV = ClockView(frame: CGRect(x: 185, y: 75, width: 170, height: 30))
+        clockIV.build_clock(min: 1, tenth: 5, sec: 0)
+        self.view.addSubview(clockIV)
+        clockIV.superview?.bringSubview(toFront: timeIV)
+    }
+    
+    func set_score() {
         
     }
     
     func set_background() {
         let background = UIImage(named: "\(game)")
         let backgroundIV = UIImageView(image: background)
-        let safeGuide = self.view.safeAreaLayoutGuide
         backgroundIV.contentMode = .scaleToFill
         self.view.addSubview(backgroundIV)
-        backgroundIV.topAnchor.constraint(equalTo: safeGuide.topAnchor).isActive = true
         backgroundIV.frame = (backgroundIV.superview?.frame)!
     }
 }
