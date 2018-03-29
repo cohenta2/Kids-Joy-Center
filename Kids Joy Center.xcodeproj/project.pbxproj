@@ -20,6 +20,8 @@
 		CBD1ABBD206C33CC0073B7C9 /* BalloonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1ABBC206C33CC0073B7C9 /* BalloonVC.swift */; };
 		CBD1ABBF206C59D30073B7C9 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1ABBE206C59D30073B7C9 /* Numbers.swift */; };
 		CBD1ABC1206C5EEA0073B7C9 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1ABC0206C5EEA0073B7C9 /* ClockView.swift */; };
+		CBD1ABC3206C82790073B7C9 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1ABC2206C82790073B7C9 /* ScoreView.swift */; };
+		CBD1ABC5206C8A5F0073B7C9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1ABC4206C8A5F0073B7C9 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		CBD1ABBC206C33CC0073B7C9 /* BalloonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonVC.swift; sourceTree = "<group>"; };
 		CBD1ABBE206C59D30073B7C9 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		CBD1ABC0206C5EEA0073B7C9 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		CBD1ABC2206C82790073B7C9 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		CBD1ABC4206C8A5F0073B7C9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		CB27C1DA20644F89005DD012 /* Kids Joy Center */ = {
 			isa = PBXGroup;
 			children = (
+				CBD1ABC2206C82790073B7C9 /* ScoreView.swift */,
 				CB64B5E3206AFE9000DB91DE /* GameVC.swift */,
 				CBD1ABB8206C32830073B7C9 /* MemoryVC.swift */,
 				CB27C1DB20644F89005DD012 /* AppDelegate.swift */,
@@ -117,6 +122,7 @@
 				CBD1ABBC206C33CC0073B7C9 /* BalloonVC.swift */,
 				CB27C20920645B53005DD012 /* ViewController.swift */,
 				CB27C1E220644F89005DD012 /* Assets.xcassets */,
+				CBD1ABC4206C8A5F0073B7C9 /* CardView.swift */,
 				CBD1ABBE206C59D30073B7C9 /* Numbers.swift */,
 				CBD1ABC0206C5EEA0073B7C9 /* ClockView.swift */,
 				CB27C1E420644F89005DD012 /* LaunchScreen.storyboard */,
@@ -279,7 +285,9 @@
 			files = (
 				CBD1ABBD206C33CC0073B7C9 /* BalloonVC.swift in Sources */,
 				CBD1ABC1206C5EEA0073B7C9 /* ClockView.swift in Sources */,
+				CBD1ABC3206C82790073B7C9 /* ScoreView.swift in Sources */,
 				CBD1ABBB206C33BC0073B7C9 /* SortVC.swift in Sources */,
+				CBD1ABC5206C8A5F0073B7C9 /* CardView.swift in Sources */,
 				CB27C20A20645B53005DD012 /* ViewController.swift in Sources */,
 				CB64B5E4206AFE9000DB91DE /* GameVC.swift in Sources */,
 				CB27C1DC20644F89005DD012 /* AppDelegate.swift in Sources */,

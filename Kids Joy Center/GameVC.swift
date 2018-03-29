@@ -42,14 +42,22 @@ class GameVC: UIViewController {
         self.view.addSubview(timeIV)
         timeIV.frame = CGRect(x: 0, y: 75, width: 170, height: 30)
         timeIV.superview?.bringSubview(toFront: timeIV)
-        var clockIV = ClockView(frame: CGRect(x: 185, y: 75, width: 170, height: 30))
+        let clockIV = ClockView(frame: CGRect(x: 185, y: 75, width: 170, height: 30))
         clockIV.build_clock(min: 1, tenth: 5, sec: 0)
         self.view.addSubview(clockIV)
         clockIV.superview?.bringSubview(toFront: timeIV)
     }
     
     func set_score() {
-        
+        let score = UIImage(named: "score")
+        let scoreIV = UIImageView(image: score)
+        self.view.addSubview(scoreIV)
+        scoreIV.frame = CGRect(x: 600, y: 75, width: 170, height: 30)
+        scoreIV.superview?.bringSubview(toFront: scoreIV)
+        let pointsIV = ScoreView(frame: CGRect(x: 785, y: 75, width: 85, height: 30))
+        pointsIV.build_score()
+        self.view.addSubview(pointsIV)
+        pointsIV.superview?.bringSubview(toFront: scoreIV)
     }
     
     func set_background() {
