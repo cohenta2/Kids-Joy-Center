@@ -43,15 +43,15 @@ class ClockView: UIView {
     }
     
     func set_min(num: Int) {
-        self.min = UIImageView(image: nums.get_number(num: num))
+        self.min.image = nums.get_number(num: num)
     }
     
     func set_tenths(num: Int) {
-        self.tenths = UIImageView(image: nums.get_number(num: num))
+        self.tenths.image = nums.get_number(num: num)
     }
     
     func set_secs(num: Int) {
-        self.secs = UIImageView(image: nums.get_number(num: num))
+        self.secs.image = nums.get_number(num: num)
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -12,8 +12,11 @@ class SortVC: GameVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        load_game()
         set_background()
         set_time()
+        set_score()
+        start_timer()
         // Do any additional setup after loading the view.
     }   
 
@@ -25,25 +28,26 @@ class SortVC: GameVC {
     override func set_background() {
         let background = UIImage(named: "\(game)")
         let backgroundIV = UIImageView(image: background)
-        let safeGuide = self.view.safeAreaLayoutGuide
         backgroundIV.contentMode = .scaleToFill
         let bar = UIView()
         bar.backgroundColor = .blue
         bar.alpha = 0.3
         self.view.addSubview(bar)
         bar.frame = CGRect(x: 0,y: 0, width: self.view.frame.width, height: self.view.frame.height / 6)
-//        bar.topAnchor.constraint(equalTo: safeGuide.topAnchor).isActive = true
         self.view.addSubview(backgroundIV)
         backgroundIV.frame = CGRect(x: 0, y: Int(bar.frame.maxY), width: Int(backgroundIV.superview!.frame.width), height: Int(backgroundIV.superview!.frame.height - bar.frame.height))
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func load_game() {
+        if difficulty == 0 {
+            self.seconds = 60
+        }
+        else if difficulty == 1 {
+            self.seconds = 45
+        }
+        else if difficulty == 2 {
+            self.seconds = 30
+        }
     }
-    */
 
 }

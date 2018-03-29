@@ -9,12 +9,14 @@
 import UIKit
 
 class MemoryVC: GameVC {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        load_game()
         set_background()
         set_time()
         set_score()
+        start_timer()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,16 +25,13 @@ class MemoryVC: GameVC {
     
     func load_game() {
         if difficulty == 0 {
-            
+            self.seconds = 120
         }
         else if difficulty == 1 {
-            
+            self.seconds = 105
         }
         else if difficulty == 2 {
-            
-        }
-        else {
-            unwind(for: <#T##UIStoryboardSegue#>, towardsViewController: <#T##UIViewController#>)
+            self.seconds = 90
         }
     }
 
