@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "play_memory" || segue.identifier == "play_sort" || segue.identifier == "play_balloon" {
             if let dest = segue.destination as? GameVC {
-                print(chosen_game)
                 dest.game = chosen_game
                 dest.difficulty = chosen_difficulty
             }
@@ -91,6 +90,5 @@ class ViewController: UIViewController {
         }
     }
     
-    
-}
+    }
 

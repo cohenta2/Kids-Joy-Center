@@ -7,21 +7,21 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameVC: UIViewController {
+    var player: AVAudioPlayer?
     var game: Int = 3
     var difficulty: Int = 3
     var seconds: Int = 0
     var timer = Timer()
-    var timer_is_running = false
+    var score = 0
     var pointsIV = ScoreView()
     var clockIV = ClockView()
+    var backgroundIV = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        print("The chosen game was \(game) and the chosen difficulty was \(difficulty)")
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,33 +40,38 @@ class GameVC: UIViewController {
     }
     */
     
-    func set_time() {
+    func set_time(start_y: Int) {
         let time = UIImage(named: "time")
         let timeIV = UIImageView(image: time)
         self.view.addSubview(timeIV)
-        timeIV.frame = CGRect(x: 0, y: 75, width: 170, height: 30)
+        timeIV.frame = CGRect(x: 0, y: start_y, width: 170, height: 30)
         timeIV.superview?.bringSubview(toFront: timeIV)
-        clockIV = ClockView(frame: CGRect(x: 185, y: 75, width: 170, height: 30))
-        clockIV.build_clock(min: minutes_left(), tenth: tens_left(), sec: ones_left())
+        clockIV = ClockView(frame: CGRect(x: 185, y: start_y, width: 170, height: 30))
+        clockIV.build_clock(min: minutes_left(), tenth: tens_digit(num: seconds_left()), sec: ones_digit(num: seconds_left()))
         self.view.addSubview(clockIV)
         clockIV.superview?.bringSubview(toFront: timeIV)
     }
     
-    func set_score() {
+    func set_score(start_y: Int) {
         let score = UIImage(named: "score")
         let scoreIV = UIImageView(image: score)
         self.view.addSubview(scoreIV)
-        scoreIV.frame = CGRect(x: 600, y: 75, width: 170, height: 30)
+        scoreIV.frame = CGRect(x: 750, y: start_y, width: 170, height: 30)
         scoreIV.superview?.bringSubview(toFront: scoreIV)
-        pointsIV = ScoreView(frame: CGRect(x: 785, y: 75, width: 85, height: 30))
+        pointsIV = ScoreView(frame: CGRect(x: 935, y: start_y, width: 85, height: 30))
         pointsIV.build_score()
         self.view.addSubview(pointsIV)
         pointsIV.superview?.bringSubview(toFront: scoreIV)
     }
     
+    func add_score(num: Int) {
+        self.pointsIV.set_tens(num: tens_digit(num: num))
+        self.pointsIV.set_ones(num: ones_digit(num: num))
+    }
+    
     func set_background() {
         let background = UIImage(named: "\(game)")
-        let backgroundIV = UIImageView(image: background)
+        backgroundIV = UIImageView(image: background)
         backgroundIV.contentMode = .scaleToFill
         self.view.addSubview(backgroundIV)
         backgroundIV.frame = (backgroundIV.superview?.frame)!
@@ -85,14 +90,12 @@ class GameVC: UIViewController {
         return Int(seconds) % 60
     }
     
-    func tens_left() -> Int {
-        let seconds_remain = seconds_left()
-        return Int(seconds_remain) / 10
+    func tens_digit(num: Int) -> Int {
+        return Int(num) / 10
     }
     
-    func ones_left() -> Int {
-        let seconds_remain = seconds_left()
-        return Int(seconds_remain) % 10
+    func ones_digit(num: Int) -> Int {
+        return Int(num) % 10
     }
     
     @objc func update_timer() {
@@ -103,12 +106,23 @@ class GameVC: UIViewController {
         }
         seconds -= 1
         self.clockIV.set_min(num: minutes_left())
-        self.clockIV.set_tenths(num: tens_left())
-        self.clockIV.set_secs(num: ones_left())
+        self.clockIV.set_tenths(num: tens_digit(num: seconds_left()))
+        self.clockIV.set_secs(num: ones_digit(num: seconds_left()))
     }
     
     func popToRoot() {
         self.navigationController!.popToRootViewController(animated: true)
+    }
+    
+    func win(yesAction: UIAlertAction) {
+        self.timer.invalidate()
+        let alert = UIAlertController(title: "You Win!", message: "You beat the game!", preferredStyle: .alert)
+        let noAction = UIAlertAction(title: "No", style: .default) {
+            UIAlertAction in self.popToRoot()
+        }
+        alert.addAction(yesAction)
+        alert.addAction(noAction)
+        self.present(alert, animated: true)
     }
     
     func gameOver() {
@@ -123,4 +137,49 @@ class GameVC: UIViewController {
         alert.addAction(noAction)
         self.present(alert, animated: true)
     }
+    
+    func reset_game() {
+        seconds = 0
+        timer = Timer()
+        pointsIV = ScoreView()
+        clockIV = ClockView()
+    }
+    
+    func cheer() {
+        if let soundURL = Bundle.main.url(forResource: "applause6", withExtension: "mp3") {
+            
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+                try AVAudioSession.sharedInstance().setActive(true)
+                player = try AVAudioPlayer(contentsOf: soundURL)
+                if let thePlayer = player {
+                    thePlayer.prepareToPlay()
+                    thePlayer.play()
+                }
+            }
+            catch {
+                print(error)
+            }
+        }
+    }
+    
+    func boo() {
+        if let soundURL = Bundle.main.url(forResource: "boo2", withExtension: "mp3") {
+            
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+                try AVAudioSession.sharedInstance().setActive(true)
+                player = try AVAudioPlayer(contentsOf: soundURL)
+                if let thePlayer = player {
+                    thePlayer.prepareToPlay()
+                    thePlayer.play()
+                }
+            }
+            catch {
+                print(error)
+            }
+        }
+    }
+    
+    
 }

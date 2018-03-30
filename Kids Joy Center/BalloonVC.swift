@@ -9,13 +9,14 @@
 import UIKit
 
 class BalloonVC: GameVC {
+    var start_y = 75
 
     override func viewDidLoad() {
         super.viewDidLoad()
         load_game()
         set_background()
-        set_time()
-        set_score()
+        set_time(start_y: start_y)
+        set_score(start_y: start_y)
         start_timer()
         // Do any additional setup after loading the view.
     }

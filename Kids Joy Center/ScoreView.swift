@@ -27,8 +27,8 @@ class ScoreView: UIView {
     func build_score() {
         let num_width = self.frame.width / 2
         let num_height = self.frame.height
-        set_tens(num: 9)
-        set_ones(num: 9)
+        set_tens(num: 0)
+        set_ones(num: 0)
         self.tens.frame = CGRect(x:0, y:0, width: num_width, height: num_height)
         self.ones.frame = CGRect(x: self.tens.frame.maxX, y: 0, width: num_width, height: num_height)
         self.backgroundColor = .white
@@ -37,11 +37,11 @@ class ScoreView: UIView {
     }
     
     func set_tens(num: Int) {
-        tens = UIImageView(image: nums.get_number(num: num))
+        tens.image = nums.get_number(num: num)
     }
     
     func set_ones(num: Int) {
-        ones = UIImageView(image: nums.get_number(num: num))
+        ones.image = nums.get_number(num: num)
     }
     /*
     // Only override draw() if you perform custom drawing.

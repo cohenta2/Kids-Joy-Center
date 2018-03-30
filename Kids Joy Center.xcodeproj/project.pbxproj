@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB25C6C7206DED0400CF1AEA /* applause6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB25C6C6206DED0400CF1AEA /* applause6.mp3 */; };
+		CB25C6C9206DED7000CF1AEA /* boo2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB25C6C8206DED7000CF1AEA /* boo2.mp3 */; };
 		CB27C1DC20644F89005DD012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27C1DB20644F89005DD012 /* AppDelegate.swift */; };
 		CB27C1E120644F89005DD012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB27C1DF20644F89005DD012 /* Main.storyboard */; };
 		CB27C1E320644F89005DD012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB27C1E220644F89005DD012 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB25C6C6206DED0400CF1AEA /* applause6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = applause6.mp3; path = ../../../Downloads/applause6.mp3; sourceTree = "<group>"; };
+		CB25C6C8206DED7000CF1AEA /* boo2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = boo2.mp3; path = ../../../Downloads/boo2.mp3; sourceTree = "<group>"; };
 		CB27C1D820644F89005DD012 /* Kids Joy Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Joy Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB27C1DB20644F89005DD012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB27C1E020644F89005DD012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				CBD1ABBA206C33BC0073B7C9 /* SortVC.swift */,
 				CBD1ABBC206C33CC0073B7C9 /* BalloonVC.swift */,
 				CB27C20920645B53005DD012 /* ViewController.swift */,
+				CB25C6C8206DED7000CF1AEA /* boo2.mp3 */,
+				CB25C6C6206DED0400CF1AEA /* applause6.mp3 */,
 				CB27C1E220644F89005DD012 /* Assets.xcassets */,
 				CBD1ABC4206C8A5F0073B7C9 /* CardView.swift */,
 				CBD1ABBE206C59D30073B7C9 /* Numbers.swift */,
@@ -256,6 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB25C6C7206DED0400CF1AEA /* applause6.mp3 in Resources */,
+				CB25C6C9206DED7000CF1AEA /* boo2.mp3 in Resources */,
 				CB27C1E620644F89005DD012 /* LaunchScreen.storyboard in Resources */,
 				CB27C1E320644F89005DD012 /* Assets.xcassets in Resources */,
 				CB27C1E120644F89005DD012 /* Main.storyboard in Resources */,
