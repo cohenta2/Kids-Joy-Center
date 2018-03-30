@@ -53,24 +53,36 @@ class SortVC: GameVC {
     func build_location_views() {
         land_view1.frame = CGRect(x: 475,y: 637, width: 550, height: 137)
         land_view1.backgroundColor = .brown
-        land_view1.alpha = 0.5
+        land_view1.alpha = 0
         self.view.addSubview(land_view1)
         land_view2.frame = CGRect(x: 715,y: 500, width: 305, height: 137)
         land_view2.backgroundColor = .brown
-        land_view2.alpha = 0.5
+        land_view2.alpha = 0
         self.view.addSubview(land_view2)
         sea_view1.frame = CGRect(x: 0, y: 500, width: 720, height: 137)
-        sea_view1.alpha = 0.5
+        sea_view1.alpha = 0
         sea_view1.backgroundColor = .blue
         self.view.addSubview(sea_view1)
         sea_view2.frame = CGRect(x: 0, y: 637, width: 500, height: 137)
-        sea_view2.alpha = 0.5
+        sea_view2.alpha = 0
         sea_view2.backgroundColor = .blue
         self.view.addSubview(sea_view2)
         air_view.frame = CGRect(x: 0, y:153, width: self.view.frame.width, height: 348)
         air_view.backgroundColor = .purple
-        air_view.alpha = 0.5
+        air_view.alpha = 0
         self.view.addSubview(air_view)
+    }
+    
+    func land_intersect() {
+        
+    }
+    
+    func air_intersect() {
+        
+    }
+    
+    func sea_intersect() {
+        
     }
     
     @objc func handlePan(gestureRecognizer: UIPanGestureRecognizer) {
